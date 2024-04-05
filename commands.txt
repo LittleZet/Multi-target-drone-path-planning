@@ -1,0 +1,36 @@
+python -m drone_path_planning.main train multiple-chasers_multiple-moving-target --save_dir=data/trial_assign/saves/checkpoint --logs_dir=data/trial_assign/logs
+
+
+python -m drone_path_planning.main plot chaser_target_obstacle_plotter --plot_data_config=plot_data_configs/5.json --plots_dir=data/three-chasers_two-moving-targets_with_obstacles/2/plots
+
+python -m drone_path_planning.main train multiple-chasers_multiple-moving-target --save_dir=data/3C_HT_2T_HT_OB_5/saves/checkpoint --logs_dir=data/3C_HT_2T_HT_OB_5/logs
+
+python -m drone_path_planning.main evaluate multiple-chasers_multiple-moving-target --save_dir=data/three-chasers_two-moving-targets/13/saves/checkpoint --plot_data_dir=data/5C4T_1000/plot_data --logs_dir=data/three-chasers_two-moving-targets/13/logs
+
+python -m drone_path_planning.main evaluate three-chasers_single-moving-target --save_dir=data/three-chasers_two-moving-targets/4/saves/checkpoint --plot_data_dir=data/three-chasers_two-moving-targets/4_1000eps/plot_data_4 --logs_dir=data/three-chasers_two-moving-targets/4/logs
+
+(1000eps, 802 collisions, 65 interceptions, 338 caught 1)
+
+
+
+python -m drone_path_planning.main plot chaser_target_plotter --plot_data_config=plot_data_configs/5.json --plots_dir=data/0/0_Heterogeneous/plots
+
+
+python -m drone_path_planning.main evaluate multiple-chasers_multiple-moving-target --save_dir=data/three-chasers_two-moving-targets_with_obstacles/3/saves/checkpoint --plot_data_dir=data/three-chasers_two-moving-targets_with_obstacles/3/plot_data_2 --logs_dir=data/three-chasers_two-moving-targets_with_obstacles/3/logs 
+
+
+python -m drone_path_planning.main plot chaser_target_plotter --plot_data_config=plot_data_configs/5.json --plots_dir=data/1_Obstacle/plots
+
+
+scp -r """\D:\NUS\FYP\drone-path-planning\drone-path-planning\""" e0564305@atlas8.nus.edu.sg:~
+
+
+python -m drone_path_planning.main train three-chasers_single-moving-target --save_dir=data/three-chasers_single-moving-target/9_2v4v6v_pi_0.25m_c16i4/saves/checkpoint --logs_dir=data/three-chasers_single-moving-target/9_2v4v6v_pi_0.25m_c16i4/logs 
+
+python -m drone_path_planning.main evaluate three-chasers_single-moving-target --save_dir=data/three-chasers_single-moving-target/9_2v4v6v_pi_0.25m_c16i4/saves/checkpoint --plot_data_dir=data/three-chasers_single-moving-target/9_2v4v6v_pi_0.25m_c16i4/saves/plot_data --logs_dir=data/three-chasers_single-moving-targets/9_2v4v6v_pi_0.25m_c16i4/logs 
+
+python -m drone_path_planning.main plot chaser_target_plotter --plot_data_config=plot_data_configs/5.json --plots_dir=data/three-chasers_single-moving-target/9_2v4v6v_pi_0.25m_c16i4/plots
+
+
+
+python -m drone_path_planning.main train multiple-chasers_multiple-moving-target --save_dir=data/three-chasers_two-moving-targets/hpc_1/saves/checkpoint --logs_dir=data/three-chasers_two-moving-targets/hpc_1/logs
