@@ -313,7 +313,7 @@ class MultipleChasersMultipleMovingTargetEnvironment(MultiAgentEnvironment):
             
             
             if self._prev_targets_intercepted != len(self._targets_intercepted):
-                reward = self._calculate_non_terminal_reward() + _CATCHING_REWARD * (len(self._targets_intercepted)/self._num_targets)
+                reward = self._calculate_non_terminal_reward() + _CATCHING_REWARD * 1/self._num_targets)
                 self._prev_targets_intercepted += 1
                 self._num_caught += 1
             
